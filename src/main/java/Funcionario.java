@@ -2,7 +2,7 @@ public class Funcionario {
 
     private String nome;
     private String cpf;
-    protected Double salario;
+    private Double salario;
 
 
     public Funcionario() {
@@ -32,6 +32,10 @@ public class Funcionario {
     }
     public Double getSalario() {
         return salario;
+    }
+
+    public double getBonificacao() {
+        return this.salario * 0.05;
     }
 
     @Override

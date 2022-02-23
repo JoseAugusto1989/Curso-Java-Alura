@@ -29,7 +29,7 @@ public class StartApp {
         System.out.println(gerente.getNome());
         System.out.println(gerente.getCpf());
         System.out.println(gerente.getSalario());
-        System.out.println(func + "/n");
+        System.out.println(func + "\n");
         System.out.println(gerente.bonificacao());
 
     }
