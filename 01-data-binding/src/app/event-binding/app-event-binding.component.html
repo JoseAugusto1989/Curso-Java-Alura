@@ -1,0 +1,48 @@
+<div class="aula">
+  <article>
+    <h3>EVENT BINDING</h3>
+    <div>
+      <button (click)="clickOnButton()"
+      class="btn btn-primary">Me clique!!</button>
+    </div>
+
+    <br><br>
+
+    <input class="" type="text"
+    (keyup)="onKeyUp($event)"
+    (keyup.enter)="salvarValor(campoInput.value)"
+    (blur)="salvarValor(campoInput.value)"
+    #campoInput >
+
+    <p>Valor atual: {{ valorAtual }}</p>
+    <p>Valor atual: {{ valorSalvo }}</p>
+
+    <br>
+    <span
+      (mouseover)="mouseOutOver()"
+      (mouseout)="mouseOutOver()"
+      [class.highlight]="isMouseOver">
+        Passe o mouse sobre mim
+    </span>
+  </article>
+</div>
+
+<hr>
+
+<div class="aula">
+  <section class="two-way-binding">
+    <article>
+      <h3>TWO WAY BINDING</h3>
+      <div>
+
+        <input type="text" [(ngModel)]= "name">
+        <p>Você digitou: {{ name }}</p>
+
+      </div>
+
+      <div>
+
+      </div>
+    </article>
+  </section>
+</div>
