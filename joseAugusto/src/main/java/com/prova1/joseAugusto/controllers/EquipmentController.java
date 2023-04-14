@@ -48,6 +48,8 @@ public class EquipmentController {
         return ResponseEntity.status(HttpStatus.OK).body("Equipment updated sucessfully");
     }
 
+    // teste do git
+
     @DeleteMapping("/{id}")
     public ResponseEntity<Object> deleteEquip(@PathVariable(value = "id") Long id) {
         Optional<Equipment> newEquip = service.findById(id);
